@@ -1,0 +1,165 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevchevronprojectNas"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"value": ""
+		},
+		"LS_accountKey": {
+			"value": ""
+		},
+		"LS2_accountKey": {
+			"value": ""
+		},
+		"LS2D_accountKey": {
+			"value": ""
+		},
+		"LSD_accountKey": {
+			"value": ""
+		},
+		"LS_ADLSCSV_accountKey": {
+			"value": ""
+		},
+		"LS_ADLSOUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_DSTADLS_accountKey": {
+			"value": ""
+		},
+		"LS_EVTOUTTRDGGR_accountKey": {
+			"value": ""
+		},
+		"LS_EVTTRGGR_accountKey": {
+			"value": ""
+		},
+		"LS_Jhson_accountKey": {
+			"value": ""
+		},
+		"LS_PAR_accountKey": {
+			"value": ""
+		},
+		"LS_SN_accountKey": {
+			"value": ""
+		},
+		"LS_SNPARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_password": {
+			"value": ""
+		},
+		"LS_SRCSQL_password": {
+			"value": ""
+		},
+		"LS_SRC_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_SRC_SN_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://sourcercsvstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"LS_properties_typeProperties_url": {
+			"value": "https://sourcercsvstorage.dfs.core.windows.net/"
+		},
+		"LS2_properties_typeProperties_url": {
+			"value": "https://sourcercsvstorage.dfs.core.windows.net/"
+		},
+		"LS2D_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"LSD_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"LS_ADLSCSV_properties_typeProperties_url": {
+			"value": "https://adlscsvtoadlsparqt.dfs.core.windows.net/"
+		},
+		"LS_ADLSOUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsoutputtrgger.dfs.core.windows.net/"
+		},
+		"LS_CSV_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevsrccsv.dfs.core.windows.net/"
+		},
+		"LS_DSTADLS_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"LS_EVTOUTTRDGGR_properties_typeProperties_url": {
+			"value": "https://adlsoutputtrgger.dfs.core.windows.net/"
+		},
+		"LS_EVTTRGGR_properties_typeProperties_url": {
+			"value": "https://adlscsvtoadlsparqt.dfs.core.windows.net/"
+		},
+		"LS_Jhson_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"LS_PAR_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"LS_REST_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/5yDVOt/data"
+		},
+		"LS_SN_properties_typeProperties_url": {
+			"value": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"LS_SNPARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdestadls.dfs.core.windows.net/"
+		},
+		"LS_SQL_properties_typeProperties_server": {
+			"value": "DESKTOP-IH04A47\\SQLEXPRESS"
+		},
+		"LS_SQL_properties_typeProperties_database": {
+			"value": "AdventureWorks2025"
+		},
+		"LS_SQL_properties_typeProperties_userName": {
+			"value": "nasreen"
+		},
+		"LS_SRCSQL_properties_typeProperties_server": {
+			"value": "DESKTOP-IH04A47\\SQLEXPRESS"
+		},
+		"LS_SRCSQL_properties_typeProperties_database": {
+			"value": "AdventureWorks2025"
+		},
+		"LS_SRCSQL_properties_typeProperties_userName": {
+			"value": "nasreen"
+		},
+		"LS_SRC_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevsrccsv.dfs.core.windows.net/"
+		},
+		"LS_SRC_SN_properties_typeProperties_url": {
+			"value": "https://sourcercsvstorage.dfs.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "DESKTOP-IH04A47\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "AdventureWorks2025"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "nasreen"
+		},
+		"EVTTRGGR_properties_typeProperties_scope": {
+			"value": "/subscriptions/206aabd5-e3cd-4473-bb30-4c4fac03ebf7/resourceGroups/rgdevchevronproject/providers/Microsoft.Storage/storageAccounts/adlscsvtoadlsparqt"
+		}
+	}
+}
