@@ -1,0 +1,20 @@
+{
+	"name": "DS_SNPARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SNPARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "inputcsv"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

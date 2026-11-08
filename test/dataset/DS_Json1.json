@@ -1,0 +1,19 @@
+{
+	"name": "DS_Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Jhson",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "restapioutput"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

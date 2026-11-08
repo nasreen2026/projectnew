@@ -1,0 +1,25 @@
+{
+	"name": "EVTTRGGR",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CPY_EVNT_TRGGR",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/eventtrggr/blobs/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/206aabd5-e3cd-4473-bb30-4c4fac03ebf7/resourceGroups/rgdevchevronproject/providers/Microsoft.Storage/storageAccounts/adlscsvtoadlsparqt",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

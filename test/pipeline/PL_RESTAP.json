@@ -1,0 +1,44 @@
+{
+	"name": "PL_RESTAP",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[InsertCustomer]",
+					"storedProcedureParameters": {
+						"CustomerID": {
+							"value": null,
+							"type": "Int32"
+						},
+						"FirstName": {
+							"value": "s",
+							"type": "String"
+						},
+						"LastName": {
+							"value": "nasreen",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "SqlServer1",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-11-06T08:21:33Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

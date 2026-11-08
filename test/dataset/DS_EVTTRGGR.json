@@ -1,0 +1,24 @@
+{
+	"name": "DS_EVTTRGGR",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_EVTTRGGR",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "industry_sic (1).csv",
+				"fileSystem": "eventtrggr"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

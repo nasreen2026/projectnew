@@ -1,0 +1,24 @@
+{
+	"name": "SCH_TRGGER",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_ADLSCSV_CPY_ADLSPARQET",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-11-06T13:52:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

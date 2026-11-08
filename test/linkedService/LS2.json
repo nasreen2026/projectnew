@@ -1,0 +1,12 @@
+{
+	"name": "LS2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://sourcercsvstorage.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk5RUI3NUIwLTQzQjItNDA0RC1CMzBELUQwOTE2RkYyMDk2RF80ZThiMzUzZi01YTdhLTQyNTYtOTE3MC02NDRjMjIxZDczZGUiDQp9"
+		}
+	}
+}

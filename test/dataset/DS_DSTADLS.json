@@ -1,0 +1,20 @@
+{
+	"name": "DS_DSTADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DSTADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "sqladls"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

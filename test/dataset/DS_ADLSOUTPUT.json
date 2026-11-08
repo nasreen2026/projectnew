@@ -1,0 +1,20 @@
+{
+	"name": "DS_ADLSOUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLSOUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "outputtrgger"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
