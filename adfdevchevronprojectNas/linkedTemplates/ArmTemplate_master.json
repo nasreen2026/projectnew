@@ -19,6 +19,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage3'"
 		},
+		"AzureDataLakeStorage4_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage4'"
+		},
+		"AzureDataLakeStorage5_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage5'"
+		},
 		"LS_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS'"
@@ -106,6 +114,18 @@
 		"AzureDataLakeStorage3_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage4_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlscsvtoadlsparqt.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage5_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sinkadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://keyvaultnas.vault.azure.net/"
 		},
 		"LS_properties_typeProperties_url": {
 			"type": "string",
@@ -215,6 +235,10 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/206aabd5-e3cd-4473-bb30-4c4fac03ebf7/resourceGroups/rgdevchevronproject/providers/Microsoft.Storage/storageAccounts/adlscsvtoadlsparqt"
 		},
+		"NEWEVNT_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/206aabd5-e3cd-4473-bb30-4c4fac03ebf7/resourceGroups/rgdevchevronproject/providers/Microsoft.Storage/storageAccounts/adlscsvtoadlsparqt"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -250,6 +274,12 @@
 					},
 					"AzureDataLakeStorage3_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage3_accountKey')]"
+					},
+					"AzureDataLakeStorage4_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage4_accountKey')]"
+					},
+					"AzureDataLakeStorage5_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage5_accountKey')]"
 					},
 					"LS_accountKey": {
 						"value": "[parameters('LS_accountKey')]"
@@ -287,15 +317,6 @@
 					"LS_PAR_accountKey": {
 						"value": "[parameters('LS_PAR_accountKey')]"
 					},
-					"LS_SN_accountKey": {
-						"value": "[parameters('LS_SN_accountKey')]"
-					},
-					"LS_SNPARQUET_accountKey": {
-						"value": "[parameters('LS_SNPARQUET_accountKey')]"
-					},
-					"LS_SRC_CSV_accountKey": {
-						"value": "[parameters('LS_SRC_CSV_accountKey')]"
-					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
@@ -304,6 +325,15 @@
 					},
 					"AzureDataLakeStorage3_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage3_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage4_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage4_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage5_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage5_properties_typeProperties_url')]"
+					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 					},
 					"LS_properties_typeProperties_url": {
 						"value": "[parameters('LS_properties_typeProperties_url')]"
@@ -343,15 +373,6 @@
 					},
 					"LS_REST_properties_typeProperties_url": {
 						"value": "[parameters('LS_REST_properties_typeProperties_url')]"
-					},
-					"LS_SN_properties_typeProperties_url": {
-						"value": "[parameters('LS_SN_properties_typeProperties_url')]"
-					},
-					"LS_SNPARQUET_properties_typeProperties_url": {
-						"value": "[parameters('LS_SNPARQUET_properties_typeProperties_url')]"
-					},
-					"LS_SRC_CSV_properties_typeProperties_url": {
-						"value": "[parameters('LS_SRC_CSV_properties_typeProperties_url')]"
 					}
 				}
 			},
@@ -371,8 +392,26 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"LS_SN_accountKey": {
+						"value": "[parameters('LS_SN_accountKey')]"
+					},
+					"LS_SNPARQUET_accountKey": {
+						"value": "[parameters('LS_SNPARQUET_accountKey')]"
+					},
+					"LS_SRC_CSV_accountKey": {
+						"value": "[parameters('LS_SRC_CSV_accountKey')]"
+					},
 					"LS_SRC_SN_accountKey": {
 						"value": "[parameters('LS_SRC_SN_accountKey')]"
+					},
+					"LS_SN_properties_typeProperties_url": {
+						"value": "[parameters('LS_SN_properties_typeProperties_url')]"
+					},
+					"LS_SNPARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_SNPARQUET_properties_typeProperties_url')]"
+					},
+					"LS_SRC_CSV_properties_typeProperties_url": {
+						"value": "[parameters('LS_SRC_CSV_properties_typeProperties_url')]"
 					},
 					"LS_SRC_SN_properties_typeProperties_url": {
 						"value": "[parameters('LS_SRC_SN_properties_typeProperties_url')]"
@@ -432,14 +471,37 @@
 					},
 					"SqlServer1_properties_typeProperties_userName": {
 						"value": "[parameters('SqlServer1_properties_typeProperties_userName')]"
-					},
-					"EVTTRGGR_properties_typeProperties_scope": {
-						"value": "[parameters('EVTTRGGR_properties_typeProperties_scope')]"
 					}
 				}
 			},
 			"dependsOn": [
 				"[resourceId('Microsoft.Resources/deployments', 'adfdevchevronprojectNas_ArmTemplate_1')]"
+			]
+		},
+		{
+			"name": "adfdevchevronprojectNas_ArmTemplate_3",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_3.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"EVTTRGGR_properties_typeProperties_scope": {
+						"value": "[parameters('EVTTRGGR_properties_typeProperties_scope')]"
+					},
+					"NEWEVNT_properties_typeProperties_scope": {
+						"value": "[parameters('NEWEVNT_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'adfdevchevronprojectNas_ArmTemplate_2')]"
 			]
 		}
 	]
