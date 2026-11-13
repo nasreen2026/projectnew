@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQL_ADLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-IH04A47\\SQLEXPRESS",
+			"database": "SQLMGTRN",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "nasreen",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2ZDMzMjMzOS02NWMwLTRkYWEtODQ5OS1jODNlZmRhNzdmM2UiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SELFHOSTED",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
