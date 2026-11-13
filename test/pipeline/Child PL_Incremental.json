@@ -14,20 +14,16 @@
 		],
 		"parameters": {
 			"TableSchema": {
-				"type": "string",
-				"defaultValue": "@item().TableSchema"
+				"type": "string"
 			},
 			"TableName": {
-				"type": "string",
-				"defaultValue": "@item().TableName"
+				"type": "string"
 			},
 			"WatermarkColumn": {
-				"type": "string",
-				"defaultValue": "@item().WatermarkColumn"
+				"type": "string"
 			},
 			"LastLoadVlue": {
-				"type": "string",
-				"defaultValue": "@item().LastLoadVlue"
+				"type": "string"
 			}
 		},
 		"annotations": []
