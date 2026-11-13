@@ -23,7 +23,8 @@
 					"dataset": {
 						"referenceName": "DS_SQL_ADLS",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
@@ -59,10 +60,22 @@
 								},
 								"waitOnCompletion": true,
 								"parameters": {
-									"TableSchema": "@item().TableSchema",
-									"TableName": "@item().TableName",
-									"WatermarkColumn": "@item().WatermarkColumn",
-									"LastLoadVlue": "@item().LastLoadVlue"
+									"TableSchema": {
+										"value": "@item().TableSchema",
+										"type": "Expression"
+									},
+									"TableName": {
+										"value": "@item().TableName",
+										"type": "Expression"
+									},
+									"WatermarkColumn": {
+										"value": "@item().WatermarkColumn",
+										"type": "Expression"
+									},
+									"LastLoadVlue": {
+										"value": "@item().LastLoadVlue",
+										"type": "Expression"
+									}
 								}
 							}
 						}
